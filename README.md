@@ -4,14 +4,22 @@
 
 ## 다운로드
 
-- [Windows 설치 파일 다운로드](https://github.com/eogks0706-ai/supply-backtest-downloads/releases/download/v1.0.0/SupplyBacktest-1.0.0-Setup.exe)
-- [압축 파일 다운로드](https://github.com/eogks0706-ai/supply-backtest-downloads/releases/download/v1.0.0/SupplyBacktest-1.0.0-windows-x64.zip)
-- [배포 안내 및 설치 설명서](https://github.com/eogks0706-ai/supply-backtest-downloads/releases/tag/v1.0.0)
+- [Windows 설치 파일 다운로드](https://github.com/eogks0706-ai/supply-backtest-downloads/releases/download/v1.1.0/SupplyBacktest-1.1.0-Setup.exe)
+- [압축 파일 다운로드](https://github.com/eogks0706-ai/supply-backtest-downloads/releases/download/v1.1.0/SupplyBacktest-1.1.0-windows-x64.zip)
+- [배포 안내 및 설치 설명서](https://github.com/eogks0706-ai/supply-backtest-downloads/releases/tag/v1.1.0)
 
 설치 파일을 실행하여 설치한 뒤 바탕화면의 **수급 백테스트 (설치판)**을 실행하세요. Python은 별도로 설치할 필요가 없습니다.
 
-**현재 v1.0.0은 코드 서명이 없는 테스트 버전입니다.** 다른 PC와 실제 KRX 데이터 수집은 아직 검증하지 않았습니다. 먼저 앱의 **샘플 분석 시작**으로 동작을 확인하세요.
+**현재 v1.1.0은 코드 서명이 없는 테스트 버전입니다.** 다른 PC와 실제 KRX 데이터 수집은 아직 검증하지 않았습니다. 먼저 앱의 **샘플 분석 시작**으로 동작을 확인하세요.
 
 실제 데이터 수집에는 KRX 계정과 네트워크가 필요합니다. 가상매매는 수동 입력 가격을 사용하며 실시간 시세·실제 주문 기능은 없습니다.
 
 이 저장소는 설치 파일과 사용 안내를 배포하기 위한 저장소입니다.
+
+## 자동 가상매매
+
+백테스트 탭에서 최소 61거래일의 CSV 폴더와 비용을 설정한 후 **자동 가상매매 → 새 실행 → 자동 시작**을 누르세요.
+
+기관·외국인 3일 연속 순매수 후보 중 수급·추세·모멘텀·RSI·거래대금·변동성을 점수화해 최대 10종목에 종목당 자산의 10% 한도로 분산합니다. 종가 기준 손절 −10%, 익절 +5% 도달 시 다음 거래일 시가에 매도합니다. 갭과 비용에 따라 체결 수익률은 기준과 다릅니다.
+
+저장된 일봉을 순차 재생하는 기능입니다. 실시간 자동매매가 아니며, 수동 가상계좌와 별도로 저장됩니다. 자세한 규칙은 배포 페이지의 설치 안내를 확인하세요. 기존 앱을 닫고 새 버전을 설치하세요.
